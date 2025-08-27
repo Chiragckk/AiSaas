@@ -12,7 +12,7 @@ await connectCloudinary();
 
 // ✅ Proper CORS
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://ai-saas-eight-pearl.vercel.app",
   credentials: true
 }));
 

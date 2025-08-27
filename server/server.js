@@ -10,9 +10,21 @@ import userRouter from './routes/userRoutes.js';
 const app = express();
 await connectCloudinary();
 
-// ✅ Proper CORS
+// ✅ Allowed origins
+const allowedOrigins = [
+  "https://quick-ai-client-lovat.vercel.app", // your frontend
+  "http://localhost:5173" // for local dev
+];
+
+// ✅ CORS middleware
 app.use(cors({
-  origin: "https://quick-ai-psi-smoky.vercel.app",
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   credentials: true
 }));
 
@@ -22,9 +34,9 @@ app.use(express.json({ limit: "10mb" }));
 // ✅ Clerk middleware
 app.use(clerkMiddleware());
 
-app.get('/', (req, res) => res.send('Server is Live'));
+app.get('/', (req, res) => res.send('Server is Live 🚀'));
 
-// ✅ Require auth only where needed
+// ✅ Protected routes
 app.use('/api/ai', requireAuth(), aiRouter);
 app.use('/api/user', requireAuth(), userRouter);
 

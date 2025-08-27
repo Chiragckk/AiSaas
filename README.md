@@ -55,13 +55,6 @@ QuickAI is a full‑stack AI web app integrating **Gemini API** and **Clipdrop A
 
 ---
 
-## 📦 Deployment
-
-* Host backend on **Vercel/Render**
-* Host frontend on **Netlify/Vercel**
-
----
-
 ## ⚡ Tech Stack
 
 **Frontend:** React, TailwindCSS

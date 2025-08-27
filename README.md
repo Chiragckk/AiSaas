@@ -39,19 +39,19 @@ QuickAI is a full‑stack AI web app integrating **Gemini API** and **Clipdrop A
 ## 📸 Screenshots
 
 ### 1. Landing Page  
-![Landing Page](./assets/2.png)
+![Landing Page](/2.png)
 
 ### 2. Dashboard  
-![Dashboard](./assets/3.png)
+![Dashboard](/3.png)
 
 ### 3. AI Image Generator  
-![Image Generator](./assets/1.png)
+![Image Generator](1.png)
 
 ### 4. Resume Review  
-![Resume Review](./assets/4.png)
+![Resume Review](4.png)
 
 ### 5. Pricing Plans  
-![Pricing](./assets/5.png)
+![Pricing](5.png)
 
 ---
 

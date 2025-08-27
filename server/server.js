@@ -12,7 +12,7 @@ await connectCloudinary();
 
 // ✅ Proper CORS
 app.use(cors({
-  origin: "https://ai-saas-eight-pearl.vercel.app",
+  origin: "https://quick-ai-psi-smoky.vercel.app",
   credentials: true
 }));
 
